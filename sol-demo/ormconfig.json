@@ -1,0 +1,11 @@
+{
+    "type": "mysql",
+    "host": "db4free.net",
+    "port": "3306",
+    "username": "kishornestjs",
+    "password": "Shreemaster011",
+    "database": "db_nestjs",
+    "synchronize": false,
+    "logging": true,
+    "entities": ["dist/**/*.Model.js"]
+  }

@@ -1,0 +1,55 @@
+Step 1:
+Setting up a new project is quite simple with the Nest CLI. With npm installed, you can create a new Nest project with the following commands in your OS terminal:
+
+npm i -g @nestjs/cli
+
+Step 2:
+Run the following command for generate a project:
+nest new Sol_Demo
+
+Step 3:
+Install following dependency.
+npm install mysql typeorm @nestjs/typeorm –save
+
+Step 4:
+Create Users folder in the src folder.
+
+Step 5:
+Create a following folder structure in the Users folder.
+Controllers
+Models
+Services
+DTO
+
+Step 6:
+Create ormconfig.json file and add following json property in the ormconfig.json file.
+{
+    "type": "mysql",
+    "host": "db4free.net",
+    "port": "3306",
+    "username": "kishornestjs",
+    "password": "root",
+    "database": "db_nestjs",
+    "synchronize": false,
+    "logging": true,
+    "entities": ["src//*.entity.ts", "dist//*entity.ts"]
+  }
+
+Step 7:
+Creating a TypeORM entity model in the Models folder.
+File should be like this
+Users.Model.ts [check Source Code]
+
+Step 9:
+Create a UserDTO file in the DTO folder. [Check Source Code]
+
+Step 10:
+Setting up a service.
+Go to Services folder and create a following file.
+Users.Service.ts [Check Source Code]
+
+Step 11:
+Create a UserController class in the Controllers folder. [Check source code]
+
+Step 12:
+Create a user.module.ts file in the users folder. [Check source Code]
