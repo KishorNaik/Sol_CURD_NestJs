@@ -3,7 +3,7 @@
     "host": "db4free.net",
     "port": "3306",
     "username": "kishornestjs",
-    "password": "Shreemaster011",
+    "password": "",
     "database": "db_nestjs",
     "synchronize": false,
     "logging": true,
